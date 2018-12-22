@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    include: 'default'
+
+info:
+  component: reservation dashboard
+
+server:
+  port: 8386
