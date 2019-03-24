@@ -13,3 +13,10 @@ eureka:
       enabled: true
     lease:
       duration: 5
+
+spring:
+  profiles:      
+    active: default
+  cloud:
+    config:
+      fail-fast: false
