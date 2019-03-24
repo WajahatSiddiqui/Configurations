@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    include: 'default'
+
+info:
+  component: api gateway using zuul proxy
+
+server:
+  port: 8762
+
+zuul:
+  host:
+    socket-timeout-millis: 30000
+  routes:
+    StockData:
+      path: /stock-data/**
+      serviceId: stock-data
+    StockController:
+      path: /stock-controller/**
+      serviceId: stock-controller
+    StockViewer:
+      path: /stock-viewer/**
+      serviceId: stock-viewer

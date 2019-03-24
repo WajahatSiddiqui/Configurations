@@ -1,5 +1,8 @@
 server:
-  port: 8761
+  port: 7777
+
+info:
+  component: service discovery using eureka
 
 eureka:
   client:

@@ -1,0 +1,19 @@
+
+server:
+  port: 8001
+
+info:
+  component: stock controller uses Alpha Vantage server
+
+spring:
+  profile:
+    include: default
+
+alpha-vantage:
+  uri: "https://www.alphavantage.co"
+    params:
+      query: "query"
+      function: "function"
+      symbol: "symbol"
+      apikey: "apikey"
+    token: "EXU41DQW1514OWAC"

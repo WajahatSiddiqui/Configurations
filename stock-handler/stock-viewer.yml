@@ -1,0 +1,7 @@
+info:
+  component: stock viewer service
+
+spring:
+  profiles:
+    includes: default
+

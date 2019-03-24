@@ -1,0 +1,8 @@
+info:
+  component: stock data service persist the data in mysql db
+
+spring:
+  profiles:
+    includes: default
+
+

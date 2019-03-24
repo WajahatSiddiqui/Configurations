@@ -1,0 +1,22 @@
+security:
+  basic:
+    enabled: false
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 5
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7777/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+
+spring:
+  profiles:      
+    active: default
+  cloud:
+    config:
+      fail-fast: false
